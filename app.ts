@@ -16,4 +16,4 @@ companyAccount.getLoan(5000)
 const studentAccount: StudentAccount = new StudentAccount("Letícia", 30)
 
 console.log("Executando deposito com 10% de acréscimo...")
-studentAccount.deposit(0)
+studentAccount.deposit(6000)

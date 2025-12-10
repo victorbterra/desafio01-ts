@@ -7,7 +7,7 @@ export class StudentAccount extends DioAccount {
   }
 
   deposit = (amount:number) => {
-    if(this.getBalance()<= 0 || null) throw new Error("Não é possível depositar valores zerados,negativos ou nulos.") 
+    if(amount <= 0) throw new Error("Não é possível depositar valores zerados,negativos ou nulos.") 
     this.setBalance(this.getBalance()+ amount +(amount * 0.10))
     console.log(`Você Depositou ${amount} reais, Agora você tem ${this.getBalance()} reais.`)
   }

@@ -20,6 +20,7 @@ export abstract class DioAccount {
   }
 
   deposit = (amount:number): void => {
+    if(amount <= 0) throw new Error("Não é possível depositar valores zerados,negativos ou nulos.")
     this.balance += amount
     console.log(`Você depositou ${amount} reais. Agora seu saldo é ${this.balance} reais`)
   }
